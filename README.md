@@ -1,10 +1,10 @@
-# My Personal Portfolio/Blog Codebase
+# 🗃️My Personal Portfolio/Blog Codebase
 
-Welcome to my personal blog and portfolio! This site is built with Mithril.js, a framework I wanted to try out. Here, you can explore my projects and read monthly blog posts about software development and tinkering.
+Welcome to my personal blog and portfolio! This site is built with **Mithril.js**, a framework I wanted to try out. Here, you can explore my projects and read monthly blog posts about software development and tinkering.
 
 Join me as I share tips and stories from my coding journey. Whether you’re a developer or just interested in technology, I hope you find something useful here!
 
-🌍 Check out [My Portfolio]([https://your-portfolio-url.com](https://sandylnur.github.io/))
+🌍 Check out website: [My Portfolio](https://sandylnur.github.io/)
 
 ## 📌Table of Contents
 
