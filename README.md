@@ -1,39 +1,30 @@
-# My Blog Portfolio
+# My Personal Portfolio/Blog Codebase
 
-Welcome to my personal blog and portfolio, built with **Mithril.js** and **Markdown**. This project showcases my work, thoughts, and experiences in the world of software development.
+Welcome to my personal blog and portfolio! This site is built with Mithril.js, a framework I wanted to try out. Here, you can explore my projects and read monthly blog posts about software development and tinkering.
 
-## Table of Contents
+Join me as I share tips and stories from my coding journey. Whether you’re a developer or just interested in technology, I hope you find something useful here!
+
+🌍 Check out [My Portfolio]([https://your-portfolio-url.com](https://sandylnur.github.io/))
+
+## 📌Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Creating Blog Posts](#creating-blog-posts)
-- [Running the Application](#running-the-application)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Features
+## 💿Features (⚠️Portfolio currently under development⚠️)
 
 - Dynamic fetching of blog posts written in Markdown.
-- Responsive design for various devices.
-- Easy navigation between blog posts and portfolio projects.
 - RSS feed for blog updates.
 
-## Technologies Used
+## 📱Technologies Used
 
-- **Mithril.js**: A modern client-side JavaScript framework.
-- **Markdown**: For writing blog content.
-- **marked.js**: For converting Markdown to HTML.
 - **GitHub Pages**: For hosting the project.
+- **Mithril.js**: A modern client-side JavaScript framework.
 
-## Getting Started
+## 🚀Getting Started
 
-### Prerequisites
-
-- Node.js (with npm) installed on your machine.
-
-- To set up the project on your local machine, you'll need to clone the repository. You can do this using SSH or HTTPS.
+To set up the project on your local machine, you'll need to clone the repository. You can do this using SSH or HTTPS.
 
 ### Using SSH
 
