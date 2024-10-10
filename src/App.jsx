@@ -1,18 +1,18 @@
 import m from "mithril";
-import Home from "./views/Home";
-import About from "./views/About";
+import RouterView from "./router/RouterView";
 
 function App() {
     return {
         view: () => (
-            <div class="app-container" id="app-container">
-                <header>
-                    <h1>Welcome to the Mithril + Vite App</h1>
-                </header>
-                <Home />
-                <About />
-            </div>
-        )
+            <main>
+                <nav>
+                    <m.route.Link href="/">Home</m.route.Link>
+                    <m.route.Link href="/about">About</m.route.Link>
+                </nav>
+
+                <RouterView />
+            </main>
+        ),
     };
 }
 
