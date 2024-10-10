@@ -9,7 +9,9 @@ const routes = {
 
 const router = () => {
     m.route.prefix = "";
-    m.route(document.getElementById("router-view"), "/", routes);
+    window.onload = () => {
+        m.route(document.getElementById("router-view"), "/", routes);
+    };
 };
 
 export default router;
