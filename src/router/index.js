@@ -7,11 +7,11 @@ const routes = {
     "/about": About,
 };
 
-const router = () => {
+function router() {
     m.route.prefix = "";
     window.onload = () => {
         m.route(document.getElementById("router-view"), "/", routes);
     };
-};
+}
 
 export default router;
