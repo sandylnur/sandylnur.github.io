@@ -1,10 +1,12 @@
 import m from "mithril";
 import Home from "../views/HomeView";
-import About from "../views/AboutView";
+import ProjectsView from "../views/ProjectsView";
+import BlogView from "../views/BlogView";
 
 const routes = {
     "/": Home,
-    "/about": About,
+    "/projects": ProjectsView,
+    "/blog": BlogView
 };
 
 function router() {

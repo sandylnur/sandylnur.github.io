@@ -7,7 +7,9 @@ function App() {
             <main>
                 <nav>
                     <m.route.Link href="/">Home</m.route.Link>
-                    <m.route.Link href="/about">About</m.route.Link>
+                    <m.route.Link href="/projects">Projects</m.route.Link>
+                    <m.route.Link href="/blog">Blog</m.route.Link>
+                    <m.route.Link href="/contact-me">Contact Me</m.route.Link>
                 </nav>
 
                 <RouterView />

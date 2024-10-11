@@ -1,6 +1,6 @@
 import m from "mithril";
 
-function Home() {
+function HomeView() {
     return {
         view: () => (
             <section class="home">
@@ -11,4 +11,4 @@ function Home() {
     };
 }
 
-export default Home;
+export default HomeView;
