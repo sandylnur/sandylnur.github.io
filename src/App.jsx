@@ -4,7 +4,7 @@ import RouterView from "./router/RouterView";
 function App() {
     return {
         view: () => (
-            <main>
+            <main class="content-wrapper">
                 <nav>
                     <m.route.Link href="/">Home</m.route.Link>
                     <m.route.Link href="/projects">Projects</m.route.Link>
