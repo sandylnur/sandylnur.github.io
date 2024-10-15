@@ -55,6 +55,7 @@ h1 {
     font-style: normal;
     font-weight: 800;
     line-height: 2.5375rem;
+    margin: 0.25rem 0;
 }
 
 h2 {
@@ -64,6 +65,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     line-height: 2.5375rem;
+    margin: 1rem 0;
 }
 
 h3 {
@@ -75,7 +77,8 @@ h3 {
     line-height: normal;
 }
 
-h4, .nav-links  {
+h4,
+.nav-links {
     color: var(--primary-color);
     font-family: "Karla", sans-serif;
     font-size: 1rem;
@@ -122,6 +125,19 @@ p {
 /* -------------------------------------------------------------------------- */
 /*                                 Header Menu                                */
 /* -------------------------------------------------------------------------- */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75rem 0;
+}
+
+.nav-right {
+    display: flex;
+    height: 2.1875rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
 .nav-links {
     text-decoration: none;
     color: inherit;
@@ -139,4 +155,25 @@ p {
 .nav-links-no-hover:hover {
     color: var(--secondary-color);
     cursor: default;
+}
+
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 4px solid #EAD8B1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Hero Introduction Section                         */
+/* -------------------------------------------------------------------------- */
+.intro-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
 }
