@@ -3,11 +3,11 @@ import m from "mithril";
 function HomeView() {
     return {
         view: () => (
-            <section class="home">
-                <h2>Home Page</h2>
+            <main class="home">
+                <h1>Home Page</h1>
                 <p>Welcome to the home page of the Mithril + Vite App.</p>
-            </section>
-        )
+            </main>
+        ),
     };
 }
 

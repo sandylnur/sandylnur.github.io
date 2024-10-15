@@ -6,7 +6,7 @@
 :root {
     --background-color: #F3F7EC;
     --primary-color: #005C78;
-    --primary-color-light: #006989;
+    --primary-color-light: #008ab4;
     --secondary-color: #E88D67;
     --text-color: #000000;
     --offset-color: #EAD8B1;
@@ -75,7 +75,7 @@ h3 {
     line-height: normal;
 }
 
-h4 {
+h4, .nav-links  {
     color: var(--primary-color);
     font-family: "Karla", sans-serif;
     font-size: 1rem;
@@ -117,4 +117,26 @@ p {
     margin-right: auto;
     max-width: 75rem;
     width: 80%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Header Menu                                */
+/* -------------------------------------------------------------------------- */
+.nav-links {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 3.25rem;
+}
+
+.nav-links:hover {
+    color: var(--primary-color-light);
+}
+
+.nav-links-active {
+    color: var(--secondary-color);
+}
+
+.nav-links-no-hover:hover {
+    color: var(--secondary-color);
+    cursor: default;
 }

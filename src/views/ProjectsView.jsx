@@ -3,11 +3,12 @@ import m from "mithril";
 function ProjectsView() {
     return {
         view: () => (
-            <section class="project">
-                <h2>Projects Page</h2>
-                <p>This is the Projects Page Body</p>
-            </section>
-        )
+            <main class="project">
+                <h1>Projects Page</h1>
+                <p>🚧 This page is currently in a galaxy far, far away... 🚧</p>
+                <p>Check back soon, young Padawan!</p>
+            </main>
+        ),
     };
 }
 
