@@ -36,8 +36,8 @@ function Header() {
                         </m.route.Link>
                         <m.route.Link
                             href="/contact-me"
-                            class={`nav-links ${isActive("/contact") ? "nav-links-active" : ""} ${
-                                isActive("/#contact") ? "nav-links-no-hover" : ""
+                            class={`nav-links ${isActive("/contact-me") ? "nav-links-active" : ""} ${
+                                isActive("/contact-me") ? "nav-links-no-hover" : ""
                             }`}
                         >
                             Contact Me
