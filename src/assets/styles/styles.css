@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*                              Themes Variables                              */
+/* -------------------------------------------------------------------------- */
+:root {
+    --background-color: #F3F7EC;
+    --primary-color: #005C78;
+    --primary-color-light: #008ab4;
+    --secondary-color: #E88D67;
+    --text-color: #000000;
+    --offset-color: #EAD8B1;
+    --light-tag: #F3F7EC;
+}
+
+[data-theme="dark-blue"] {
+    --background-color: #006989;
+    --primary-color: #F3F7EC;
+    --primary-color-light: #EAD8B1;
+    --secondary-color: #E88D67;
+    --text-color: #FFFFFF;
+    --offset-color: #EAD8B1;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                          HTML and Body Definition                          */
+/* -------------------------------------------------------------------------- */
+html {
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: Inconsolata;
+    /* overflow-x: hidden */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Default Styles                               */
+/* -------------------------------------------------------------------------- */
+h1 {
+    color: var(--primary-color);
+    font-family: "Karla", sans-serif;
+    font-size: 2.986rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.5375rem;
+    margin: 0.25rem 0;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: "Karla", sans-serif;
+    font-size: 1.728rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5375rem;
+    margin: 1rem 0;
+}
+
+h3 {
+    color: var(--primary-color-light);
+    font-family: "Karla", sans-serif;
+    font-size: 1.728rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h4,
+.nav-links {
+    color: var(--primary-color);
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h5 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-size: 0.817rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h6 {
+    color: var(--light-tag);
+    font-family: "Inconsolata", monospace;
+    font-size: 0.83313rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    color: var(--text-color);
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75rem;
+    width: 80%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Header Menu                                */
+/* -------------------------------------------------------------------------- */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75rem 0;
+}
+
+.nav-right {
+    display: flex;
+    height: 2.1875rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 3.25rem;
+}
+
+.nav-links:hover {
+    color: var(--primary-color-light);
+}
+
+.nav-links-active {
+    color: var(--secondary-color);
+}
+
+.nav-links-no-hover:hover {
+    color: var(--secondary-color);
+    cursor: default;
+}
+
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 4px solid #EAD8B1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Hero Introduction Section                         */
+/* -------------------------------------------------------------------------- */
+.intro-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}

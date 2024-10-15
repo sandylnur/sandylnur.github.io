@@ -1,5 +1,9 @@
 import m from "mithril";
 import App from "./App";
+import router from "./router";
+import "./assets/styles/styles.css";
 
-// Mount the root component (App) to the DOM
-m.mount(document.getElementById("app"), App);
+m.mount(document.getElementById("app"), {
+    oncreate: router(),
+    view: () => m(App),
+});
