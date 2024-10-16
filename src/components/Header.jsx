@@ -12,7 +12,7 @@ function Header() {
             return (
                 <header class="nav-header">
                     <m.route.Link href="/" class="nav-logo">
-                        <img class="profile-picture nav-left" src={profilePicture} alt="Sandyl Nursigadoo" />
+                        <img class={`profile-picture nav-left ${isActive("/") ? "profile-picture-huge": ""}`} src={profilePicture} alt="Sandyl Nursigadoo" />
                     </m.route.Link>
                     <div class="nav-right">
                         <nav class="nav-menu">
