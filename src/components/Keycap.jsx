@@ -86,7 +86,7 @@ function Keycap() {
                     onclick={() => handleClick(attrs)}
                 >
                     <div class={`keycap-foreground ${isActive ? 'keycap-active' : ''}`} style={widthForeground}>
-                        <h7 class="keycap-font">{attrs.character}</h7>
+                        <h7 class={`keycap-font ${attrs.smallFont ? "keycap-font-small" : ""}`}>{attrs.setAltKey ? attrs.altCharacter : attrs.character }</h7>
                     </div>
                 </div>
             );

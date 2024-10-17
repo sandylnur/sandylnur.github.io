@@ -227,6 +227,10 @@ p {
     animation: gradient-animation 3s ease infinite;
 }
 
+.keycap-font-small {
+    font-size: 0.817rem;
+}
+
 @keyframes gradient-animation {
     0% {
         background-position: 0%;

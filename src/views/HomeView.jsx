@@ -1,10 +1,15 @@
 import m from "mithril";
 import Keycap from "../components/Keycap.jsx";
 
-let themeToggle = false;
+let blState = false;
+let altKeyToggle = false;
 
-function toggleTheme() {
-    themeToggle = !themeToggle;
+function toggleBacklight() {
+    blState = !blState;
+}
+
+function toggleAltKey() {
+    altKeyToggle = !altKeyToggle;
 }
 
 function HomeView() {
@@ -36,48 +41,48 @@ function HomeView() {
                 <div class="hero-right">
                     <div id="keyboard">
                         <div class="keyboard-row">
-                            <Keycap backlight={themeToggle} character="&" />
-                            <Keycap backlight={themeToggle} character="*" />
-                            <Keycap backlight={themeToggle} character="(" />
-                            <Keycap backlight={themeToggle} character=")" />
-                            <Keycap backlight={themeToggle} character="fix me" customWidth={["7.936rem", "7.200rem"]}/>
-                            <Keycap backlight={themeToggle} character="L" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="&" altCharacter="!" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="*" altCharacter="@" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="(" altCharacter="#" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character=")" altCharacter="$" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="fix me" altCharacter="debug" customWidth={["7.936rem", "7.200rem"]} smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="L" altCharacter="esc" smallFont={true}/>
                         </div>
                         <div class="keyboard-row">
-                            <Keycap backlight={themeToggle} character="I" />
-                            <Keycap backlight={themeToggle} character="O" />
-                            <Keycap backlight={themeToggle} character="P" />
-                            <Keycap backlight={themeToggle} character="{" />
-                            <Keycap backlight={themeToggle} character="}" />
-                            <Keycap backlight={themeToggle} character="|" customWidth={["5.777rem", "5.041rem"]} />
-                            <Keycap backlight={themeToggle} character="page down" textKey="" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="I" altCharacter="Q" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="O" altCharacter="W" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="P" altCharacter="E" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="{" altCharacter="R" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="}" altCharacter="T" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="|" altCharacter="pipe" customWidth={["5.777rem", "5.041rem"]} smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="init" altCharacter="loop" textKey="" smallFont={true}/>
                         </div>
                         <div class="keyboard-row">
-                            <Keycap backlight={themeToggle} character="J" />
-                            <Keycap backlight={themeToggle} character="K" />
-                            <Keycap backlight={themeToggle} character="L" />
-                            <Keycap backlight={themeToggle} character="I" />
-                            <Keycap backlight={themeToggle} character=";" />
-                            <Keycap backlight={themeToggle} character="commit" customWidth={["9.103rem", "8.367rem"]} />
-                            <Keycap backlight={themeToggle} character="home" specificKey="" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="J" altCharacter="A" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="K" altCharacter="S" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="L" altCharacter="D" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="I" altCharacter="F" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character=";" altCharacter="H" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="commit" altCharacter="push" customWidth={["9.103rem", "8.367rem"]} smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="hash" altCharacter="start" smallFont={true}/>
                         </div>
                         <div class="keyboard-row">
-                            <Keycap backlight={themeToggle} character="N" />
-                            <Keycap backlight={themeToggle} character="M" />
-                            <Keycap backlight={themeToggle} character="<" />
-                            <Keycap backlight={themeToggle} character=">" />
-                            <Keycap backlight={themeToggle} character="/" />
-                            <Keycap backlight={themeToggle} character="format" customWidth={["6.886rem", "6.15rem"]} />
-                            <Keycap backlight={themeToggle} character="&#708;" />
-                            <Keycap backlight={themeToggle} character="end" specificKey="" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="N" altCharacter="Z" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="M" altCharacter="X" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="<" altCharacter="C" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character=">" altCharacter="V" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="/" altCharacter="B" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="format" altCharacter="align" customWidth={["6.886rem", "6.15rem"]} smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="&#708;" altCharacter="&#708;" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="end" altCharacter="null" smallFont={true}/>
                         </div>
                         <div class="keyboard-row">
-                            <Keycap backlight={themeToggle} character="alt" specificKey="" />
-                            <Keycap backlight={themeToggle} character="fn" specificKey="" />
-                            <Keycap backlight={themeToggle} character="ctrl" specificKey="" />
-                            <Keycap backlight={themeToggle} character="&#706;" />
-                            <Keycap backlight={themeToggle} character="&#709;" />
-                            <Keycap backlight={themeToggle} character="&#707;" />
+                            <Keycap onclick={toggleAltKey} setAltKey={altKeyToggle} backlight={blState} character="MO" altCharacter="MO" smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="fn" altCharacter="super" smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="ctrl" altCharacter="ctrl" smallFont={true}/>
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="<" altCharacter="<" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character="&#709;" altCharacter="&#709;" />
+                            <Keycap setAltKey={altKeyToggle} backlight={blState} character=">" altCharacter=">" />
                         </div>
                     </div>
                 </div>
