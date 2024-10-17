@@ -197,6 +197,10 @@ p {
     transition: transform 0.1s ease-in-out;
 }
 
+.keycap-wide-background {
+    background: conic-gradient(from 180deg at 50% 50%, #9D9177 65.826deg, #EAD8B1 79.594deg, #FFEFC0 135.783deg, #FFF3C0 143.066deg, #FFF3C0 215.823deg, #FFEFC0 223.881deg, #EAD8B1 279.615deg, #9D9177 295.319deg);
+}
+
 .keycap-foreground {
     width: 2.655rem;
     height: 2.742rem;
@@ -233,13 +237,13 @@ p {
     }
 }
 
-.keycap-background:active {
+/* .keycap-background:active {
     transform: translateY(0.2rem) scale(0.95);
 }
 
 .keycap-foreground:active {
     transform: scale(0.98);
-}
+} */
 
 .keycap-backlight-on .keycap-font {
     animation: gradient-animation 3s ease infinite;
@@ -251,10 +255,23 @@ p {
     animation: none;
 }
 
-.keycap-active {
+.keycap-background.keycap-active {
     transform: translateY(0.2rem) scale(0.95);
 }
 
 .keycap-foreground.keycap-active {
     transform: scale(0.98);
+}
+
+#keyboard {
+    display: grid;
+    justify-items: right;
+    gap: 1rem;
+    /* margin-top: 0.5rem; */
+}
+
+.keyboard-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }

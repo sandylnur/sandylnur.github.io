@@ -1,5 +1,5 @@
 import m from "mithril";
-import Keycap from "../components/keycaps/Keycap.jsx";
+import Keycap from "../components/Keycap.jsx";
 
 let themeToggle = false;
 
@@ -9,9 +9,17 @@ function toggleTheme() {
 
 function HomeView() {
     return {
+        // oninit: () => {
+        //     setTimeout(() => {
+        //         const keycapElement = document.querySelector(".keycap");
+        //         if (keycapElement) {
+        //             keycapElement.click();
+        //         }
+        //     }, 0);
+        // },
         view: () => (
             <main class="intro-hero">
-                <div className="hero-left">
+                <div class="hero-left">
                     <h1>Hi, I'm Sandyl,</h1>
                     <h2>@ backend developer</h2>
                     <p>
@@ -26,7 +34,52 @@ function HomeView() {
                     </p>
                 </div>
                 <div class="hero-right">
-                    <Keycap backlight={themeToggle} character="A" onclick={toggleTheme} />
+                    <div id="keyboard">
+                        <div class="keyboard-row">
+                            <Keycap backlight={themeToggle} character="&" />
+                            <Keycap backlight={themeToggle} character="*" />
+                            <Keycap backlight={themeToggle} character="(" />
+                            <Keycap backlight={themeToggle} character=")" />
+                            <Keycap backlight={themeToggle} character="fix me" customWidth={["7.936rem", "7.200rem"]}/>
+                            <Keycap backlight={themeToggle} character="L" />
+                        </div>
+                        <div class="keyboard-row">
+                            <Keycap backlight={themeToggle} character="I" />
+                            <Keycap backlight={themeToggle} character="O" />
+                            <Keycap backlight={themeToggle} character="P" />
+                            <Keycap backlight={themeToggle} character="{" />
+                            <Keycap backlight={themeToggle} character="}" />
+                            <Keycap backlight={themeToggle} character="|" customWidth={["5.777rem", "5.041rem"]} />
+                            <Keycap backlight={themeToggle} character="page down" textKey="" />
+                        </div>
+                        <div class="keyboard-row">
+                            <Keycap backlight={themeToggle} character="J" />
+                            <Keycap backlight={themeToggle} character="K" />
+                            <Keycap backlight={themeToggle} character="L" />
+                            <Keycap backlight={themeToggle} character="I" />
+                            <Keycap backlight={themeToggle} character=";" />
+                            <Keycap backlight={themeToggle} character="commit" customWidth={["9.103rem", "8.367rem"]} />
+                            <Keycap backlight={themeToggle} character="home" specificKey="" />
+                        </div>
+                        <div class="keyboard-row">
+                            <Keycap backlight={themeToggle} character="N" />
+                            <Keycap backlight={themeToggle} character="M" />
+                            <Keycap backlight={themeToggle} character="<" />
+                            <Keycap backlight={themeToggle} character=">" />
+                            <Keycap backlight={themeToggle} character="/" />
+                            <Keycap backlight={themeToggle} character="format" customWidth={["6.886rem", "6.15rem"]} />
+                            <Keycap backlight={themeToggle} character="&#708;" />
+                            <Keycap backlight={themeToggle} character="end" specificKey="" />
+                        </div>
+                        <div class="keyboard-row">
+                            <Keycap backlight={themeToggle} character="alt" specificKey="" />
+                            <Keycap backlight={themeToggle} character="fn" specificKey="" />
+                            <Keycap backlight={themeToggle} character="ctrl" specificKey="" />
+                            <Keycap backlight={themeToggle} character="&#706;" />
+                            <Keycap backlight={themeToggle} character="&#709;" />
+                            <Keycap backlight={themeToggle} character="&#707;" />
+                        </div>
+                    </div>
                 </div>
             </main>
         ),
